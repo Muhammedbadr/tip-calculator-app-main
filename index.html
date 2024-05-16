@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      crossorigin="anonymous"
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css">
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <header><img src="./assets/logo.svg" alt=""/><h1>spli<br>tter</h1></header>
+
+    <div class="general-wrapper">
+      <div class="data-wrapper">
+        <h2>Bill</h2>
+        <label for="input-bill">
+        <input class="input-bill" id="input-bill" type="number"  placeholder="" min="0" />
+      </label>
+        <h2>Select Tip %</h2>
+        <ul>
+          <li id="percentage-5">
+            <button class="percentage-button" value="5">5%</button>
+          </li>
+          <li id="percentage-10">
+            <button class="percentage-button" value="10">10%</button>
+          </li>
+          <li id="percentage-15">
+            <button class="percentage-button"  value="15">15%</button>
+          </li>
+          <li id="percentage-25">
+            <button class="percentage-button" value="25">25%</button>
+          </li>
+          <li id="percentage-50">
+            <button class="percentage-button" value="50">50%</button>
+          </li>
+          <li>
+            <input
+              type="number"
+              placeholder="Custom"
+              class="percentage-button"
+              id="inputBtn"
+              min="0"
+            />
+          </li>
+        </ul>
+        <div class="num_zero-none">
+          <h2>Number of People</h2>
+          <p class="hiden" id="error">Can't enter zero <br> And less of it
+          </p>
+        </div>
+        <label for="input-people">
+          <input id="input-people" class="input-people" type="number" value="1" min="1" />
+        </label>
+        
+      </div>
+
+
+
+      
+      <div class="result-wrapper">
+        <div class="result-txt">
+          <div class="text-amount">
+            <div>
+              <h2>Tip Amount</h2>
+              <p>/ person</p>
+            </div>
+            <h3>
+              <span id="tip-amount">0</span>
+            </h3>
+          </div>
+          <div class="total-amount">
+            <div>
+              <h2>Total</h2>
+              <p>/ person</p>
+            </div>
+            <h3><span id="total">0</span></h3>
+          </div>
+        </div>
+
+        <button type="button" class="reset-button">RESET</button>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a rel="noopener noreferrer" href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a rel="noopener noreferrer" href="https://github.com/Kakalanp" target="_blank">Joaquín GLZ</a>. & <a rel="noopener noreferrer" href="https://github.com/estebanmual" target="_blank">Estebanquito</a>
+    </div>
+  </body>
+  <script src="/script.js"></script>
+</html>
